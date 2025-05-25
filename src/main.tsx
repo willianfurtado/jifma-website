@@ -1,13 +1,19 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import App from "./App.tsx";
 import Matches from "./pages/Matches/index.tsx";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import Modalities from "./pages/Modalities/index.tsx";
+import Medal from "./pages/Medal/index.tsx";
+import Caxias from "./pages/Caxias/index.tsx";
+import "./index.css";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> } ,
-  { path: "/partidas", element: <Matches/>}
+  { path: "/partidas", element: <Matches/>},
+  { path: "/modalidades", element: <Modalities/>},
+  { path: "/quadro-de-medalhas", element: <Medal/>},
+  { path: "/conheca-Caxias", element: <Caxias/>},
 ]);
 
 createRoot(document.getElementById("root")!).render(

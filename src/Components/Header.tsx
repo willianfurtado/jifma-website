@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-[92%] mx-auto px-4">
         <div className="flex items-center justify-between ">
           <img src={logo} className="w-24 h-auto" alt="Logo IF" />
-          <h1 className="text-2xl font-bold">JIFMA 2025</h1>
+          <h1 className="text-2xl font-bold">JIFMA 2025 - CAXIAS</h1>
           <div className="flex items-center justify-center gap-4 border rounded-2xl p-2 w-40">
             <img src={facebook} className="w-6 h-6" alt="Facebook logo" />
             <img src={instagram} className="w-6 h-6" alt="Instagram logo" />
