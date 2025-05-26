@@ -10,13 +10,13 @@ export default function Header() {
         <div className="flex items-center justify-between ">
           <img src={logo} className="w-24 h-auto" alt="Logo IF" />
           <h1 className="text-2xl font-bold">JIFMA 2025 - CAXIAS</h1>
-          <div className="flex items-center justify-center gap-4 border rounded-2xl p-2 w-40">
+          <div className="flex items-center justify-center gap-4 border border-black rounded-2xl p-2 w-40">
             <img src={facebook} className="w-6 h-6" alt="Facebook logo" />
             <img src={instagram} className="w-6 h-6" alt="Instagram logo" />
             <img src={whatsApp} className="w-6 h-6" alt="WhatsApp logo" />
           </div>
         </div>
-        <hr className="border-t border-gray-300 my-6 mx-auto" />
+        <hr className="border-t border-black my-6 mx-auto" />
         <div className="px-5 h-10 border rounded-2xl flex items-center ">
           <nav className="flex gap-33 justify-center">
             <div className="flex items-center gap-1">
