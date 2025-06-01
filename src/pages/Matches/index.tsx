@@ -4,26 +4,63 @@ import Header from "../../Components/Header";
 export default function Matches() {
   const partidas = [
     {
-      modalidade: "Futsal", 
+      modalidade: "Futsal",
       data: "16",
       mes: "JUN",
       horario: "Sábado, 13:30h",
       local: "João Castelo",
       equipe1: "Caxias",
-      equipe2: "Codó"
+      equipe2: "Codó",
+    },
+    {
+      modalidade: "Futsal",
+      data: "16",
+      mes: "JUN",
+      horario: "Sábado, 13:30h",
+      local: "João Castelo",
+      equipe1: "Caxias",
+      equipe2: "Codó",
+    },
+    {
+      modalidade: "Futsal",
+      data: "16",
+      mes: "JUN",
+      horario: "Sábado, 13:30h",
+      local: "João Castelo",
+      equipe1: "Caxias",
+      equipe2: "Codó",
+    },
+    {
+      modalidade: "Futsal",
+      data: "16",
+      mes: "JUN",
+      horario: "Sábado, 13:30h",
+      local: "João Castelo",
+      equipe1: "Caxias",
+      equipe2: "Codó",
+    },
+    {
+      modalidade: "Futsal",
+      data: "16",
+      mes: "JUN",
+      horario: "Sábado, 13:30h",
+      local: "João Castelo",
+      equipe1: "Caxias",
+      equipe2: "Codó",
     },
   ];
 
   return (
     <>
       <Header />
-      <h1>Partidas</h1>
-      <div className=" gap-4 justify-center mt-4">
-        {partidas.map((partida, index) => (
-          <Card key={index} {...partida} />
-        ))}
-      </div>
-      
+      <main className="max-w-[90%] mx-auto px-2">
+        <h1 className="text-2xl font-bold text-black my-4">Conheça Caxias</h1>
+        <div className="gap-10 grid grid-cols-4">
+          {partidas.map((partida, index) => (
+            <Card key={index} {...partida} />
+          ))}
+        </div>
+      </main>
     </>
   );
 }

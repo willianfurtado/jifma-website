@@ -16,18 +16,18 @@ interface iProps {
 export default function Card(props: iProps) {
   return (
     <>
-      <main className="max-w-[90%] mx-auto">
-        <div className="h-[230px] w-[300px] border border-green-800 rounded-xl ">
+      <main className="">
+        <div className="h-[220px] w-[300px] border-2 border-green-800 rounded-xl ">
           <div className="p-2">
-            <h1 className="uppercase text-center text-2xl font-semibold">
+            <h1 className="uppercase text-center text-xl font-semibold">
               {props.modalidade}
             </h1>
-            <hr className=" border-t border-gray-300 my-2 mx-auto" />
+            <hr className=" border-t border-green-800 border-1 my-2 mx-auto" />
 
             <div className="flex p-2 justify-between">
               {/* Lado da bola e data */}
               <div className="flex flex-col items-center justify-center gap-1 mt-3 ">
-                <img src={ball} className="h-12 w-12" />
+                <img src={ball} className="h-14 w-13" />
                 <div className="text-center text">
                   <p className="text-2xl">{props.data}</p>
                   <p className="text-xl uppercase">{props.mes}</p>
@@ -35,7 +35,7 @@ export default function Card(props: iProps) {
               </div>
 
               {/* Informações da partida */}
-              <div className="flex flex-col gap-3 text-lg mt-3">
+              <div className="flex flex-col gap-4 text-lg mt-3">
                 {/* Equipes */}
                 <div className="flex gap-5">
                   <img src={clock} className="h-7.5 w-7.5" />

@@ -40,7 +40,7 @@ export default function Caxias() {
     <>
       <Header />
       <main className="max-w-[90%] mx-auto px-2">
-        <h1 className="text-2xl font-bold text-white my-4">Conheça Caxias</h1>
+        <h1 className="text-2xl font-bold text-black my-4">Conheça Caxias</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12 ">
           {cards.map((card, index) => (
             <Know key={index} {...card} />
