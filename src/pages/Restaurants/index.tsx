@@ -3,7 +3,7 @@ import Place from "../../Components/Place-Card";
 
 import jonathan from '../../assets/jonathan.png'
 
-export default function Restaurantes() {
+export default function Restaurants() {
   
   return (
     <>
@@ -17,7 +17,7 @@ export default function Restaurantes() {
         </div> */}
         <Place 
           imgLocal={jonathan}
-          nomeLocal="Buteco"
+          nomeLocal="Buteco do Jonathan"
           funcionamento="08h às 17h"
           endereco="Rua Veneza"
         />

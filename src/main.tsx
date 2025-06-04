@@ -7,7 +7,10 @@ import Modalities from "./pages/Modalities/index.tsx";
 import Medal from "./pages/Medal/index.tsx";
 import Caxias from "./pages/Caxias/index.tsx";
 import "./index.css";
-import Restaurantes from "./pages/Restaurants/index.tsx";
+import Restaurants from "./pages/Restaurants/index.tsx";
+import Health from "./pages/Health/index.tsx";
+import Organization from "./pages/Organization/index.tsx";
+import Security from "./pages/Security/index.tsx";
 
 const router = createBrowserRouter([
   { path: "/", element: <App /> } ,
@@ -15,7 +18,10 @@ const router = createBrowserRouter([
   { path: "/modalidades", element: <Modalities/>},
   { path: "/quadro-de-medalhas", element: <Medal/>},
   { path: "/conheca-Caxias", element: <Caxias/>},
-  { path: "/restaurantes", element: <Restaurantes/>},
+  { path: "/restaurantes", element: <Restaurants/>},
+  { path: "/saúde", element: <Health/>},
+  { path: "/seguranca", element: <Security/>},
+  { path: "/organizacao", element: <Organization/>},
 ]);
 
 createRoot(document.getElementById("root")!).render(
