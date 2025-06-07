@@ -54,8 +54,8 @@ export default function Matches() {
     <>
       <Header />
       <main className="max-w-[90%] mx-auto px-2">
-        <h1 className="text-2xl font-bold text-black my-4">Conheça Caxias</h1>
-        <div className="gap-10 grid grid-cols-4">
+        <h1 className="text-2xl font-bold text-color-primary my-4">Partidas</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
           {partidas.map((partida, index) => (
             <Card key={index} {...partida} />
           ))}

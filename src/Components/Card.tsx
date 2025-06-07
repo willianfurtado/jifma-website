@@ -1,7 +1,7 @@
-import ball from "../assets/ball.png";
-import place from "../assets/place-icon.png";
-import clock from "../assets/clock-icon.png";
-import calendar from "../assets/calendar-icon.png";
+import ball from "../assets/ball.svg";
+import place from "../assets/place-icon.svg";
+import clock from "../assets/clock.svg";
+import calendar from "../assets/calendar.svg";
 
 interface iProps {
   modalidade: string;

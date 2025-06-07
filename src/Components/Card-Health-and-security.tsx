@@ -1,4 +1,4 @@
-import phone from "../assets/phone-green.svg";
+import phone from "../assets/phone.svg";
 import place from "../assets/place-green.svg";
 import Routes from "./Button-Routes";
 
@@ -27,7 +27,7 @@ export default function Card(props: iProps) {
             <span>{props.enderecoLocal}</span>
           </div>
           <div className="flex items-center gap-2 text-sm text-gray-700">
-            <img src={phone} alt="ícone de telefone" className="w-4 h-4" />
+            <img src={phone} alt="ícone de telefone" className="w-5 h-4" />
             <span>{props.telefone}</span>
           </div>
         </div>

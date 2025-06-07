@@ -5,13 +5,13 @@ interface iProps {
 
 export default function Modalitie(props: iProps) {
   return (
-    <div className="flex border border-green-400 items-center justify-center gap-2 p-1 rounded-lg w-[150px]">
+    <div className="flex border-green-700 border-2 items-center justify-center gap-2 p-1 rounded-lg w-[200px]">
       <img
         src={props.imagemModalide}
         alt="modalidade"
         className="w-9 h-9 object-contain mb-2"
       />
-      <span className="text-center text-white font-semibold uppercase">{props.modalidade}</span>
+      <span className="text-center text-black font-semibold uppercase">{props.modalidade}</span>
     </div>
   );
 }

@@ -1,26 +1,27 @@
 import Header from "../../Components/Header";
 import Know from "../../Components/Know";
-import garfo from "../../assets/garfo - icon.png";
-import piscina from "../../assets/piscina - icon.png";
-import farmacia from "../../assets/farmacia - icon.png";
-import policia from "../../assets/policia - icon.png";
-import telefone from "../../assets/telefone - icon.png";
-import seta from "../../assets/seta-direita-icon.png";
+import restaurants from "../../assets/restaurant.svg";
+import lazer from "../../assets/leisure.svg";
+import saude from "../../assets/healthcare.svg";
+import policia from "../../assets/policia.svg";
+import telefone from "../../assets/contacts.svg";
+import organizacao from "../../assets/organization.svg";
+import seta from "../../assets/arrow.svg";
 
 export default function Caxias() {
   const cards = [
     {
-      imagem: garfo,
+      imagem: restaurants,
       titulo: "Restaurantes",
       icone: seta,
     },
     {
-      imagem: piscina,
+      imagem: lazer,
       titulo: "Lazer",
       icone: seta,
     },
     {
-      imagem: farmacia,
+      imagem: saude,
       titulo: "Saúde",
       icone: seta,
     },
@@ -32,6 +33,11 @@ export default function Caxias() {
     {
       imagem: telefone,
       titulo: "Contatos",
+      icone: seta,
+    },
+    {
+      imagem: organizacao,
+      titulo: "Organizacao",
       icone: seta,
     },
   ];
