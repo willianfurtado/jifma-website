@@ -6,11 +6,11 @@ export default function Organization() {
     <>
       <Header />
       <main className="w-[90%] mx-auto">
-        <h1 className="text-2xl font-bold text-black my-4">Organização</h1>
+        <h1 className="text-2xl font-bold text-black mt-4 mb-6">Organização</h1>
         <CardOrganization 
           nome="Luis Morais"
           email="luismorais@ifma.acad.edu.br"
-          telefone="(99) 99999-9999"
+          telefone="(99) 99192-0203"
         />
       </main>
     </>
