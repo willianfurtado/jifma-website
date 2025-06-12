@@ -12,7 +12,7 @@ interface iProps {
 export default function Card(props: iProps) {
   return (
     <>
-      <div className="w-[270px] bg-white rounded-xl shadow-xl ">
+      <div className="w-[270px] bg-white rounded-xl shadow-xl">
         <img 
           src={props.imgLocal} 
           alt="imagem do local" 

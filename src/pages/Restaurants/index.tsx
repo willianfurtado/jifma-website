@@ -1,4 +1,5 @@
 import Header from "../../Components/Header";
+
 import Place from "../../Components/Place-Card";
 
 import jonathan from '../../assets/jonathan.png'
@@ -21,6 +22,8 @@ export default function Restaurants() {
           funcionamento="08h às 17h"
           endereco="Rua Veneza"
         />
+
+
       </main>
     </>
   );
