@@ -15,51 +15,47 @@ interface iProps {
 
 export default function Card(props: iProps) {
   return (
-    <>
-      <main className="">
-        <div className="h-[220px] w-[300px] border-2 border-green-800 rounded-xl ">
-          <div className="p-2">
-            <h1 className="uppercase text-center text-xl font-semibold">
-              {props.modalidade}
-            </h1>
-            <hr className=" border-t border-green-800 border-1 my-2 mx-auto" />
+    <div className="h-full w-full border-2 border-green-800 rounded-xl shadow-md">
+      <div className="p-4 flex flex-col items-center justify-center h-full">
+        <h1 className="uppercase text-xl font-semibold text-green-800 text-center">
+          {props.modalidade}
+        </h1>
 
-            <div className="flex p-2 justify-between">
-              {/* Lado da bola e data */}
-              <div className="flex flex-col items-center justify-center gap-1 mt-3 ">
-                <img src={ball} className="h-14 w-13" />
-                <div className="text-center text">
-                  <p className="text-2xl">{props.data}</p>
-                  <p className="text-xl uppercase">{props.mes}</p>
-                </div>
-              </div>
+        <hr className="border-t border-green-800 my-3 w-[90%]" />
 
-              {/* Informações da partida */}
-              <div className="flex flex-col gap-4 text-lg mt-3">
-                {/* Equipes */}
-                <div className="flex gap-5">
-                  <img src={clock} className="h-7.5 w-7.5" />
-                  <span>
-                    {props.equipe1} x {props.equipe2}
-                  </span>
-                </div>
+        <div className="flex items-center justify-center gap-4">
+          {/* Data e bola */}
+          <div className="flex flex-col items-center gap-1">
+            <img src={ball} className="h-14 w-14" />
+            <div className="text-center">
+              <p className="text-2xl font-bold text-green-800">{props.data}</p>
+              <p className="text-sm uppercase">{props.mes}</p>
+            </div>
+          </div>
 
-                {/* Data e horário */}
-                <div className="flex gap-5">
-                  <img src={calendar} className="h-7.5 w-7.5" />
-                  <span>{props.horario}</span>
-                </div>
+          {/* Informações da partida */}
+          <div className="flex flex-col gap-2 text-center text-sm">
+            <div className="flex items-center justify-center gap-2">
+              <img src={clock} className="h-5 w-5" />
+              <span>
+                {props.equipe1} <strong className="text-green-800">x</strong> {props.equipe2}
+              </span>
+            </div>
 
-                {/* Local */}
-                <div className="flex gap-5">
-                  <img src={place} className="h-7.5 w-7.5" />
-                  <span>{props.local}</span>
-                </div>
-              </div>
+            <div className="flex items-center justify-center gap-2">
+              <img src={calendar} className="h-5 w-5" />
+              <span>{props.horario}</span>
+            </div>
+
+            <div className="flex items-center justify-center gap-2">
+              <img src={place} className="h-5 w-5" />
+              <span>{props.local}</span>
             </div>
           </div>
         </div>
-      </main>
-    </>
+      </div>
+    </div>
   );
 }
+
+

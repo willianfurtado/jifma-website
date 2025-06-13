@@ -12,11 +12,11 @@ interface iProps {
 export default function Card(props: iProps) {
   return (
     <>
-      <div className="w-[270px] bg-white rounded-xl shadow-xl">
+      <div className="w-full bg-white rounded-xl shadow-xl">
         <img 
           src={props.imgLocal} 
           alt="imagem do local" 
-          className="w-full object-cover " 
+          className="w-full object-cover rounded-t-2xl " 
         />
 
         {/* Funcionamento */}
