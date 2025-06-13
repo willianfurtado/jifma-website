@@ -59,7 +59,7 @@ export default function Modalities() {
       <Header />
       <main className="max-w-[90%] mx-auto">
         <h1 className="text-2xl font-bold text-black my-4">Modalidades</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-12  ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
           {modalidades.map((modalidade, index) => (
             <Modalitie key={index} {...modalidade} />
           ))}

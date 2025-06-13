@@ -5,7 +5,7 @@ interface iProps {
 
 export default function Modalitie(props: iProps) {
   return (
-    <div className="flex border-green-700 border-2 items-center justify-center gap-2 p-1 rounded-lg w-[200px]">
+    <div className="flex border-green-700 border-2 items-center justify-center gap-2 p-1 rounded-lg w-full">
       <img
         src={props.imagemModalide}
         alt="modalidade"
