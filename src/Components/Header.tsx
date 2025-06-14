@@ -15,9 +15,15 @@ export default function Header() {
             JIFMA 2025 - CAXIAS
           </h1>
           <div className="flex items-center justify-center gap-4 border border-black rounded-2xl p-2 w-40 mx-auto lg:mx-0">
-            <a href=""><img src={facebook} className="w-7 h-7" alt="Facebook logo" /></a>
-            <a href=""><img src={instagram} className="w-7 h-7" alt="Instagram logo" /></a>
-            <a href=""><img src={whatsApp} className="w-7 h-7" alt="WhatsApp logo" /></a>
+            <a href="">
+              <img src={facebook} className="w-7 h-7" alt="Facebook logo" />
+            </a>
+            <a href="">
+              <img src={instagram} className="w-7 h-7" alt="Instagram logo" />
+            </a>
+            <a href="">
+              <img src={whatsApp} className="w-7 h-7" alt="WhatsApp logo" />
+            </a>
           </div>
         </div>
 
@@ -28,14 +34,38 @@ export default function Header() {
             {[
               { to: "/", label: "Início", color: "bg-red-600" },
               { to: "/partidas", label: "Partidas", color: "bg-lime-600" },
-              { to: "/quadro-de-medalhas", label: "Quadro de medalhas", color: "bg-red-600" },
-              { to: "/modalidades", label: "Modalidades", color: "bg-lime-600" },
-              { to: "/conheca-caxias", label: "Conheça Caxias", color: "bg-red-600" },
-              { to: "/organizacao", label: "Organização", color: "bg-lime-600" },
+              {
+                to: "/quadro-de-medalhas",
+                label: "Quadro de medalhas",
+                color: "bg-red-600",
+              },
+              {
+                to: "/modalidades",
+                label: "Modalidades",
+                color: "bg-lime-600",
+              },
+              {
+                to: "/conheca-caxias",
+                label: "Conheça Caxias",
+                color: "bg-red-600",
+              },
+              {
+                to: "/organizacao",
+                label: "Organização",
+                color: "bg-lime-600",
+              },
             ].map(({ to, label, color }) => (
-              <div key={to} className="flex items-center gap-2">
+              <div
+                key={to}
+                className="flex items-center gap-2 text-md lg:text-lg hover:bg-gray-100 px-3 py-1 rounded-xl transition-all duration-200 ease-in-out"
+              >
                 <div className={`w-[20px] h-[20px] ${color} rounded-full`} />
-                <Link to={to}>{label}</Link>
+                <Link
+                  to={to}
+                  className="text-gray-800 hover:text-green-700 font-medium transition-colors duration-200"
+                >
+                  {label}
+                </Link>
               </div>
             ))}
           </nav>
@@ -44,4 +74,3 @@ export default function Header() {
     </header>
   );
 }
-
