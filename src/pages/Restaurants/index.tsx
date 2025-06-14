@@ -1,4 +1,5 @@
 import Header from "../../Components/Header";
+import PageTransition from "../../Components/PageTransition";
 
 import Place from "../../Components/Place-Card";
 
@@ -41,14 +42,16 @@ export default function Restaurants() {
   return (
     <>
       <Header />
-      <main className="max-w-[90%] mx-auto">
-        <h1 className="text-2xl font-bold text-black my-4">Restaurantes</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
-          {restaurants.map((modalidade, index) => (
-            <Place key={index} {...modalidade} />
-          ))}
-        </div>
-      </main>
+      <PageTransition>
+        <main className="max-w-[90%] mx-auto">
+          <h1 className="text-2xl font-bold text-black my-4">Restaurantes</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+            {restaurants.map((modalidade, index) => (
+              <Place key={index} {...modalidade} />
+            ))}
+          </div>
+        </main>
+      </PageTransition>
     </>
   );
 }

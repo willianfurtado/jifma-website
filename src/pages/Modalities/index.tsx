@@ -9,6 +9,7 @@ import natacao from "../../assets/swimming.svg"
 import praia from "../../assets/volei-praia.svg"
 import xadrez from "../../assets/chess.svg"
 import tenis from "../../assets/tenis-sport-svgrepo-com.svg"
+import PageTransition from "../../Components/PageTransition";
 
 export default function Modalities() {
   const modalidades = [
@@ -57,14 +58,16 @@ export default function Modalities() {
   return (
     <>
       <Header />
-      <main className="max-w-[90%] mx-auto">
-        <h1 className="text-2xl font-bold text-black my-4">Modalidades</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
-          {modalidades.map((modalidade, index) => (
-            <Modalitie key={index} {...modalidade} />
-          ))}
-        </div>
-      </main>
+      <PageTransition>
+        <main className="max-w-[90%] mx-auto">
+          <h1 className="text-2xl font-bold text-black my-4">Modalidades</h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6  ">
+            {modalidades.map((modalidade, index) => (
+              <Modalitie key={index} {...modalidade} />
+            ))}
+          </div>
+        </main>
+      </PageTransition>
     </>
   );
 }
