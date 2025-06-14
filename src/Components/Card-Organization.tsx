@@ -10,7 +10,7 @@ interface iProps {
 
 export default function CardOrganization(props: iProps) {
   return (
-    <div className="w-full bg-white rounded-xl shadow-xl p-4 relative">
+    <div className="w-full bg-white rounded-xl shadow-xl p-4 relative transition-transform hover:scale-[1.02] duration-300 ease-in-out">
       
       {/* Botão WhatsApp no canto superior direito */}
       <a

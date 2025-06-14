@@ -9,15 +9,22 @@ interface iProps {
 
 export default function Know(props: iProps) {
   return (
-    <>
-      <div className="flex flex-col p-2 items-center justify-center gap-3 w-full h-[170px] border-2 rounded-2xl border-green-800">
-        <img src={props.imagem} alt="icone" className="w-16 h-16" />
-        <span className="font-bold text-2xl">{props.titulo}</span>
-        <Link to={props.rota} className="font-bold text-gray-500 flex gap-2 items-center">
-          <img src={props.icone} alt="icone" className="w-[30px] h-[30px]" />
-          Ver descrição
-        </Link>
-      </div>
-    </>
+    <div className="flex flex-col items-center justify-center gap-3 w-full h-[170px] border-2 border-green-800 rounded-2xl shadow-md p-4 text-center transition-transform hover:scale-[1.02] duration-300 ease-in-out">
+      <img src={props.imagem} alt="icone" className="w-16 h-16" />
+      
+      <span className="font-bold text-2xl text-green-800">{props.titulo}</span>
+      
+      <Link
+        to={props.rota}
+        className="flex items-center gap-2 font-medium text-gray-600 hover:text-green-600 transition-all duration-300"
+      >
+        <img
+          src={props.icone}
+          alt="icone"
+          className="w-[24px] h-[24px] transition-transform duration-300 group-hover:translate-x-1"
+        />
+        <span className="group-hover:underline">Ver descrição</span>
+      </Link>
+    </div>
   );
 }

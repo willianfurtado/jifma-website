@@ -15,7 +15,7 @@ interface iProps {
 
 export default function Card(props: iProps) {
   return (
-    <div className="h-full w-full border-2 border-green-800 rounded-xl shadow-md">
+    <div className="h-full w-full border-2 border-green-800 rounded-xl shadow-md transition-transform hover:scale-[1.02] duration-300 ease-in-out">
       <div className="p-3.5 flex flex-col items-center justify-center h-full">
         <h1 className="uppercase text-2xl font-semibold text-green-800 text-center">
           {props.modalidade}

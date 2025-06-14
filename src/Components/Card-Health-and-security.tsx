@@ -12,7 +12,7 @@ interface iProps {
 export default function Card(props: iProps) {
   return (
     <>
-      <div className="w-full bg-white rounded-xl shadow-xl">
+      <div className="w-full bg-white rounded-xl shadow-xl transition-transform hover:scale-[1.02] duration-300 ease-in-out">
         <img 
           src={props.imgLocal} 
           alt="imagem do local" 

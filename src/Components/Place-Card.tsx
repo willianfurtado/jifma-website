@@ -12,7 +12,7 @@ interface iProps {
 export default function Place(props: iProps) {
   return (
     <>
-      <div className="h-full w-full border-2 border-green-800 rounded-[26px] flex flex-col justify-between">
+      <div className="h-full w-full border-2 border-green-800 rounded-[26px] flex flex-col justify-between transition-transform hover:scale-[1.02] duration-300 ease-in-out">
         <img
           src={props.imgLocal}
           alt="Estabelecimento"
